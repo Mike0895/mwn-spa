@@ -1,27 +1,23 @@
 <template>
-    <div>
-        <Header />
-        <v-container>
-            <h1>Contact</h1>
-        </v-container>
-        <Footer />
-    </div>
+    <v-container>
+        <v-row>
+            <v-col>
+                <h2>Contacto</h2>
+                <p class="secondary-text">Get in touch with us.</p>
+                <button class="cta">Contact Us</button>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
-    name: 'Contact',
-    components: {
-        Header,
-        Footer
-    }
+    name: 'Contacto'
 });
 </script>
 
 <style scoped>
-/* Añade estilos aquí si es necesario */
+/* Estilos específicos para Contact.vue si es necesario */
 </style>

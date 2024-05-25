@@ -1,27 +1,22 @@
 <template>
-    <div>
-        <Header />
-        <v-container>
-            <h1>Our</h1>
-        </v-container>
-        <Footer />
-    </div>
+    <v-container>
+        <v-row>
+            <v-col>
+                <h3>Conócenos</h3>
+                <p>Information about our team and mission.</p>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
-    name: 'Our',
-    components: {
-        Header,
-        Footer
-    }
+    name: 'Conócenos'
 });
 </script>
 
 <style scoped>
-/* Añade estilos aquí si es necesario */
+/* Estilos específicos para Our.vue si es necesario */
 </style>

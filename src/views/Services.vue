@@ -1,27 +1,22 @@
 <template>
-    <div>
-        <Header />
-        <v-container>
-            <h1>Services</h1>
-        </v-container>
-        <Footer />
-    </div>
+    <v-container>
+        <v-row>
+            <v-col>
+                <h2>Servicios</h2>
+                <p>Details about our services.</p>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
-    name: 'Services',
-    components: {
-        Header,
-        Footer
-    }
+    name: 'Servicios'
 });
 </script>
 
 <style scoped>
-/* Añade estilos aquí si es necesario */
+/* Estilos específicos para Services.vue si es necesario */
 </style>

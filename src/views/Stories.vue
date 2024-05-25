@@ -1,27 +1,22 @@
 <template>
-    <div>
-        <Header />
-        <v-container>
-            <h1>Stories</h1>
-        </v-container>
-        <Footer />
-    </div>
+    <v-container>
+        <v-row>
+            <v-col>
+                <h2>Historias</h2>
+                <p class="secondary-text">Stories and testimonials from our customers.</p>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
-    name: 'Stories',
-    components: {
-        Header,
-        Footer
-    }
+    name: 'Historias de éxito'
 });
 </script>
 
 <style scoped>
-/* Añade estilos aquí si es necesario */
+/* Estilos específicos para Stories.vue si es necesario */
 </style>
