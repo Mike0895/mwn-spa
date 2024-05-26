@@ -1,23 +1,17 @@
 <template>
-    <v-container>
-        <v-row>
-            <v-col>
-                <h2>Contacto</h2>
-                <p class="secondary-text">Get in touch with us.</p>
-                <button class="cta">Contact Us</button>
-            </v-col>
-        </v-row>
+    <v-container fluid>
+        <ContactForm />
     </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import ContactForm from '@/components/ContactForm.vue';
 
 export default defineComponent({
-    name: 'Contacto'
+    name: 'Contacto',
+    components: {
+        ContactForm
+    }
 });
 </script>
-
-<style scoped>
-/* Estilos específicos para Contact.vue si es necesario */
-</style>
