@@ -3,7 +3,7 @@
     --primary-color: #0071E3;
     --primary-color-light: #FFFFFF;
     --bg-dark: #151518;
-    --bg-light: var(--primary-color-light);
+    --bg-light: #FFFFFF;
     --secondary-color-1: #FFDD57;
     --secondary-color-2: #A3D9A5;
     --secondary-color-3: #FF6F31;
@@ -25,7 +25,7 @@ body {
 /* Tipografías y tamaños */
 h1,
 h2,
-h3 {
+h3, h4, h5,h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     /* Negrita para mayor impacto */
@@ -42,7 +42,16 @@ h2 {
 h3 {
     font-size: 1.75em;
 }
+h4 {
+    font-size: 1.60em;
+}
 
+h5 {
+    font-size: 1.3em;
+}
+h6 {
+    font-size: 1em;
+}
 .button,
 .cta {
     font-family: 'Poppins', sans-serif;
@@ -78,4 +87,9 @@ textarea {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 1em;
+}
+
+.container-limit {
+    max-width: 1500px;
+    padding: 40px;
 }

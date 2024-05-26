@@ -1,6 +1,6 @@
 <template>
     <v-app-bar app :color="headerColor" dark>
-        <v-container>
+        <v-container class="container-limit">
             <v-row align="center" justify="space-between" class="header-content">
                 <!-- Logotipo -->
                 <v-col cols="auto">
