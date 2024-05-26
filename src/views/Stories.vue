@@ -18,7 +18,10 @@
                 </v-col>
             </v-row>
             <v-container>
-                <CountUp />
+                <CountUpSection />
+            </v-container>
+            <v-container>
+                <LogoSlider />
             </v-container>
         </v-container>
     </v-container>
@@ -27,13 +30,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import ImageSlider from '@/components/ImageSlider.vue';
-import CountUp from '@/components/CountUp.vue'; 
+import CountUpSection from '@/components/CountUpSection.vue'; 
+import LogoSlider from '@/components/LogoSlider.vue'; 
 
 
 export default defineComponent({
     name: 'Historias de éxito',
     components: {
-        ImageSlider, CountUp
+        ImageSlider, CountUpSection, LogoSlider 
 
     }
 });

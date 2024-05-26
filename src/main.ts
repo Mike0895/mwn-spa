@@ -5,8 +5,6 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import './assets/styles/global.css';
-import './assets/images/mwn-logo-completo-blanco.png'; 
-
 
 loadFonts()
 

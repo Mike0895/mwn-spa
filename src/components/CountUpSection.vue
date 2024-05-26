@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="count-up">
+    <v-container fluid class="count-up-section">
         <v-row>
             <CountUpCard v-for="(item, index) in counters" :key="index" :endValue="item.value"
                 :description="item.description" />
@@ -12,7 +12,7 @@ import { defineComponent } from 'vue';
 import CountUpCard from '@/components/CountUpCard.vue'; // Asegúrate de que la ruta sea correcta
 
 export default defineComponent({
-    name: 'CountUp',
+    name: 'CountUpSection',
     components: {
         CountUpCard
     },
@@ -29,8 +29,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.count-up {
-    background-color: #151518;
+.count-up-section {
     padding: 40px 0;
 }
 </style>

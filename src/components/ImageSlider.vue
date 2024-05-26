@@ -34,27 +34,27 @@ export default defineComponent({
         const model = ref<number | null>(null);
         const images = ref([
             {
-                src: '@/assets/images/ejemplo-1.png',
+                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
                 title: 'Image 1',
                 description: 'Description for Image 1',
             },
             {
-                src: '@/assets/images/ejemplo-1.png',
+                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
                 title: 'Image 2',
                 description: 'Description for Image 2',
             },
             {
-                src: '@/assets/images/ejemplo-1.png',
+                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
                 title: 'Image 3',
                 description: 'Description for Image 3',
             },
             {
-                src: '@/assets/images/ejemplo-1.png',
+                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
                 title: 'Image 4',
                 description: 'Description for Image 4',
             },
             {
-                src: '@/assets/images/ejemplo-1.png',
+                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
                 title: 'Image 5',
                 description: 'Description for Image 5',
             },
