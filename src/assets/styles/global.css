@@ -93,3 +93,7 @@ textarea {
     max-width: 1500px;
     padding: 40px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
