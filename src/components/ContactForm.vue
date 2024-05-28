@@ -1,5 +1,5 @@
 <template>
-    <v-container class="bg-contact"fluid>
+    <v-container class="bg-contact" fluid>
         <v-container class="container-limit">
             <v-container class="contact-form-container">
                 <v-card class="pa-4">
@@ -22,8 +22,10 @@
                         <v-textarea v-model="message" label="Mensaje"></v-textarea>
                         <v-checkbox v-model="privacy" :rules="[v => !!v || 'Debes aceptar las políticas de privacidad']"
                             label="He leído y acepto la política de privacidad" required></v-checkbox>
-                        <v-btn :disabled="!valid" color="primary" @click="submitForm">SOLICITA UNA ASESORÍA
-                            GRATUITA</v-btn>
+
+                        <Btn-with-border class="btn-container" @click="submitForm">SOLICITA UNA AUDITORÍA
+                            GRATUITA
+                        </Btn-with-border>
                     </v-form>
                 </v-card>
                 <v-snackbar v-model="snackbar" color="success">
@@ -31,14 +33,18 @@
                 </v-snackbar>
             </v-container>
         </v-container>
-        </v-container>
+    </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import BtnWithBorder from './Btn-with-border.vue';
 
 export default defineComponent({
     name: 'ContactForm',
+    components: {
+        BtnWithBorder
+    },
     setup() {
         const valid = ref(false);
         const name = ref('');
@@ -80,6 +86,8 @@ export default defineComponent({
     }
 });
 </script>
+
+
 
 <style scoped>
 .bg-contact {

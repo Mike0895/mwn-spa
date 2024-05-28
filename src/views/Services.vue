@@ -41,7 +41,7 @@
                                 30 minutos
                             </li>
                         </ul>
-                        <Btn-with-border @click="handleButtonClick">SOLICITA UNA AUDITORÍA GRATUITA
+                        <Btn-with-border  class="btn-container" @click="handleButtonClick">SOLICITA UNA AUDITORÍA GRATUITA
                         </Btn-with-border>
                     </v-col>
 
@@ -189,6 +189,11 @@ h2 {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+}
+.btn-container {
+    display: flex;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .silueta-imagen {
