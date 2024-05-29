@@ -1,0 +1,99 @@
+/* Variables de color */
+:root {
+    --primary-color: #0071E3;
+    --primary-color-light: #FFFFFF;
+    --bg-dark: #151518;
+    --bg-light: #FFFFFF;
+    --secondary-color-1: #FFDD57;
+    --secondary-color-2: #A3D9A5;
+    --secondary-color-3: #FF6F31;
+    --secondary-color-4: #FF5757;
+}
+
+/* Importación de las tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@500;600;700&display=swap');
+
+/* Estilos globales */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color-light);
+    color: #333;
+}
+
+/* Tipografías y tamaños */
+h1,
+h2,
+h3, h4, h5,h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* Negrita para mayor impacto */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+h4 {
+    font-size: 1.60em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+h6 {
+    font-size: 1em;
+}
+.button,
+.cta {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Opcional, para mayor énfasis */
+}
+
+.nav-menu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    /* Peso normal para cuerpos de texto */
+    line-height: 1.6;
+    /* Espaciado adecuado para mejorar la legibilidad */
+    font-size: 1em;
+}
+
+.description,
+.secondary-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    /* Peso más ligero para textos secundarios */
+    font-size: 0.9em;
+}
+
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.container-limit {
+    max-width: 1500px;
+    padding: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
