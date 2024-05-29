@@ -5,11 +5,14 @@
             <v-row class="my-5">
                 <v-col cols="12" class="text-center">
                     <h2 class="h2-our">¿QUÉ HACE MWN?</h2>
-                    <p>
-                        En Offertor, destacamos por nuestra capacidad para desarrollar sitios web personalizados y
-                        seguros,
-                        con un diseño atractivo y optimizados para motores de búsqueda, garantizando una experiencia
-                        óptima en cualquier dispositivo.
+                    <p class="p">
+                        En MWN, nos especializamos en llevar tu negocio al siguiente nivel a través de estrategias de
+                        marketing digital y desarrollo web personalizadas. Ubicados en el corazón de Navarra, combinamos
+                        creatividad y tecnología para ofrecer soluciones integrales que abarcan desde la creación de
+                        sitios web atractivos y funcionales hasta campañas de marketing digital efectivas que aumentan
+                        tu visibilidad online y atraen clientes potenciales.<br><br>
+                        En MWN, estamos comprometidos con tu éxito. Únete a nosotros y descubre cómo podemos transformar
+                        tu presencia digital y hacer crecer tu negocio en Navarra.
                     </p>
                 </v-col>
             </v-row>
@@ -27,16 +30,18 @@
                     <v-img src="@/assets/images/Citro-Mockup-3.png.webp" alt="Monitor"></v-img>
                 </v-col>
                 <v-col cols="12" md="6">
+                    <p class="p">
+                        En MWN, entendemos que cada PYME y
+                        corporación, tiene necesidades y objetivos únicos. Por ello, adaptamos nuestras soluciones dando
+                        un enfoque personalizado asegura que cada proyecto, reciba la misma dedicación y
+                        atención al detalle para alcanzar el éxito. <br><br>
+                        <strong>Lo que ofrecemos:</strong><br>
+                    </p>
                     <ul>
-
-                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon>¿No sabes cómo crear un sitio web que
-                            atraiga a tus potenciales clientes?</li>
-                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon> ¿Necesitas aprovechar al máximo el potencial de tu sitio
-                            web para generar leads?</li>
-                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon>¿No sabes cómo destacar frente a la competencia con un
-                            diseño web único y atractivo?</li>
-                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon>¿No tienes el tiempo o los conocimientos para crear un sitio
-                            web por tu cuenta?</li>
+                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon>Estrategias Personalizadas</li>
+                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon>Escalabilidad y Flexibilidad</li>
+                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon>Tecnología Avanzada</li>
+                        <li><v-icon class="icon-color">mdi-arrow-right</v-icon>Soporte Continuo</li>
                     </ul>
                 </v-col>
             </v-row>
@@ -55,7 +60,7 @@
                         Transformamos tu sitio web en una herramienta de conversión para
                         impulsar tu negocio.
                     </h4>
-                    <p>
+                    <p class="p">
                         Nuestro equipo altamente capacitado en desarrollo web, estará contigo en todo momento,
                         ofreciendo
                         las soluciones

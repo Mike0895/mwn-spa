@@ -33,7 +33,7 @@ export default defineComponent({
   border: 2px solid var(--primary-color);
   color: var(--primary-color) ;
   background: transparent ;
-  padding: 20px 30px;
+  padding: 25px 30px !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 

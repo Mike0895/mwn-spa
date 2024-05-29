@@ -5,12 +5,11 @@
                 <!-- Texto y Botón -->
                 <v-col cols="12" md="6" class="text-section">
                     <h1>
-                        Convertimos visitantes en <span class="highlight">clientes potenciales</span> para tu negocio, a
-                        través de diseños web únicos.
+                        Convertimos visitantes en <span class="highlight">clientes potenciales</span> para tu negocio digital en Navarra.
                     </h1>
                     <p>
-                        Nuestro equipo ha contribuido al éxito de sitios web que han generado más de 2 millones de
-                        euros.
+                        Impulsamos a las PYMES a través de estrategias de Marketing Digital y
+                        Desarrollo Web innovador.
                     </p>
 
                     <Btn-with-border class="btn-container" @click="handleButtonClick">SOLICITA UNA AUDITORÍA
