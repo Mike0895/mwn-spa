@@ -46,10 +46,11 @@
                 </v-col>
             </v-row>
 
-            <!-- ¿Tu sitio web está afectando el crecimiento de tu negocio? -->
+            <!-- 3 bloque -->
             <v-row class="my-5">
                 <v-col cols="12" class="text-center">
-                    <h3>¿TU SITIO WEB ESTÁ AFECTANDO EL CRECIMIENTO DE TU NEGOCIO?</h3>
+                    <h3>¿ESTÁ TU SITIO WEB IMPULSANDO TU NEGOCIO COMO DEBERÍA?
+                    </h3>
                 </v-col>
             </v-row>
 
@@ -57,14 +58,16 @@
             <v-row class="my-5">
                 <v-col cols="12" md="6">
                     <h4>
-                        Transformamos tu sitio web en una herramienta de conversión para
-                        impulsar tu negocio.
+                        Convertimos tu web en una máquina de conversiones para hacer crecer tu negocio.
                     </h4>
                     <p class="p">
-                        Nuestro equipo altamente capacitado en desarrollo web, estará contigo en todo momento,
-                        ofreciendo
-                        las soluciones
-                        adecuadas para tu negocio y asegurando que siempre esté un paso adelante de la competencia.
+                        <br>En MWN, nos especializamos en marketing digital y desarrollo web en Navarra, transformando tu
+                        sitio web en una poderosa herramienta de conversión. Nuestro equipo altamente capacitado trabaja
+                        contigo para proporcionar soluciones adaptadas específicamente a tu negocio, garantizando que
+                        siempre estés un paso adelante de la competencia. Utilizamos las últimas tecnologías y
+                        estrategias de SEO para mejorar la visibilidad y el rendimiento de tu sitio web, atrayendo más
+                        clientes potenciales y aumentando tus ventas. Confía en nosotros para optimizar tu presencia
+                        digital y llevar tu negocio al siguiente nivel.
                     </p>
                 </v-col>
                 <v-col cols="12" md="6" class="text-center">

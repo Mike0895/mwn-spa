@@ -1,6 +1,6 @@
 <template>
     <!-- Sección 1 -->
-    <v-container class="services-container" id="services"  fluid>
+    <v-container class="services-container" id="services" fluid>
         <v-container class="container-limit">
             <v-row>
                 <v-col cols="12" class="text-center my-5">
@@ -23,32 +23,34 @@
                     <v-col cols="12" md="6" class="text-section">
                         <h2>Tu negocio podría estar dando mejores resultados</h2>
                         <p>
-                            Estudiaremos tu negocio y te plantearemos una estrategia 100% personalizada para desarrollar
+                            <br>Estudiaremos tu negocio y te plantearemos una estrategia 100% personalizada para
+                            desarrollar
                             un
                             sitio web efectivo y atractivo que haga crecer tu negocio.
                         </p>
-                        <ul class="benefits-list">
+                        <ul class="benefits-list"><br>
                             <li>
-                                <v-icon left>mdi-check-circle</v-icon>
+                                <v-icon class="icon-check-services" left>mdi-check-circle</v-icon>
                                 Sin compromiso
                             </li>
                             <li>
-                                <v-icon left>mdi-check-circle</v-icon>
+                                <v-icon class="icon-check-services" left>mdi-check-circle</v-icon>
                                 100% confidencial
                             </li>
                             <li>
-                                <v-icon left>mdi-check-circle</v-icon>
+                                <v-icon class="icon-check-services" left>mdi-check-circle</v-icon>
                                 30 minutos
                             </li>
                         </ul>
-                        <Btn-with-border  class="btn-container" @click="handleButtonClick">SOLICITA UNA AUDITORÍA GRATUITA
+                        <Btn-with-border class="btn-container" @click="handleButtonClick">SOLICITA UNA AUDITORÍA
+                            GRATUITA
                         </Btn-with-border>
                     </v-col>
 
                     <!-- Imagen con Figura Azul -->
                     <v-col cols="12" md="6" class="image-section">
                         <div class="blue-shape">
-                            <v-img src="@/assets/images/ejemplo-1.png" alt="Business Image"
+                            <v-img src="@/assets/images/Citro-Mockup-8-768x768.png.webp" alt="Business Image"
                                 class="silueta-imagen"></v-img>
                         </div>
                     </v-col>
@@ -76,45 +78,45 @@ export default defineComponent({
             cards: [
                 {
                     icon: 'mdi-star',
-                    title: 'Marketing Digital',
-                    subtitle: 'Subtitle 1',
-                    description: 'Description for card 1',
-                    detailedInfo: 'Detailed information for card 1'
+                    title: 'Estrategias de Marketing Digital',
+                    subtitle: 'Potencia tu presencia en línea.',
+                    description: '',
+                    detailedInfo: 'Aumentamos la visibilidad de tu negocio en Navarra, utilizando el SEO, SEM, y las RR.SS para atraer y convertir más clientes potenciales, asegurando un crecimiento medible.'
                 },
                 {
                     icon: 'mdi-heart',
-                    title: 'Diseño Web',
-                    subtitle: 'Subtitle 2',
-                    description: 'Description for card 2',
-                    detailedInfo: 'Detailed information for card 2'
+                    title: 'Desarrollo Web a Medida y Moderno',
+                    subtitle: 'Soluciones web personalizadas.',
+                    description: '',
+                    detailedInfo: 'Creamos web únicas y optimizadas para la conversión. Nuestros desarrolladores utilizan las últimas tecnologías para garantizar una excelente experiencia de usuario.'
                 },
                 {
                     icon: 'mdi-home',
-                    title: 'SEO',
-                    subtitle: 'Subtitle 3',
-                    description: 'Description for card 3',
-                    detailedInfo: 'Detailed information for card 3'
+                    title: 'Diseño Gráfico Creativo e Impactante',
+                    subtitle: 'Imágenes que impactan.',
+                    description: '',
+                    detailedInfo: 'Nuestro equipo crea identidades visuales que capturan la esencia de tu marca. Desde logotipos hasta materiales promocionales para fortalecer tu presencia.'
                 },
                 {
                     icon: 'mdi-star',
-                    title: 'Captación de Leads',
-                    subtitle: 'Subtitle 1',
-                    description: 'Description for card 1',
-                    detailedInfo: 'Detailed information for card 1'
+                    title: 'Gestión de Redes Sociales y Campañas',
+                    subtitle: 'Conecta con tu audiencia',
+                    description: '',
+                    detailedInfo: 'Administramos y optimizamos tus perfiles en RR.SS y creamos contenido relevante y atractivo que fomenta la interacción y construye una comunidad leal en torno a tu marca.'
                 },
                 {
                     icon: 'mdi-heart',
-                    title: 'Desarrollo Web',
-                    subtitle: 'Subtitle 2',
-                    description: 'Description for card 2',
-                    detailedInfo: 'Detailed information for card 2'
+                    title: 'Consultoría y Auditoría SEO',
+                    subtitle: 'Mejora tu posicionamiento',
+                    description: '',
+                    detailedInfo: 'Identificamos y corregimos problemas, y te asesoramos sobre las mejores prácticas para mantener un SEO eficaz para los motores de búsqueda.'
                 },
                 {
                     icon: 'mdi-home',
-                    title: 'IAR',
-                    subtitle: 'Subtitle 3',
-                    description: 'Description for card 3',
-                    detailedInfo: 'Detailed information for card 3'
+                    title: 'Marketing de Contenidos para Pymes',
+                    subtitle: 'Contenido que convierte',
+                    description: '',
+                    detailedInfo: 'Realizamos marketing de contenidos que atrae, educa y convierte a tu audiencia. Creamos blogs, artículos, infografías y videos que posicionan tu marca en su sector.'
                 }
             ]
         };
@@ -168,6 +170,7 @@ h2 {
 
 .v-icon {
     margin-right: 10px;
+    color: var(--primary-color);
 }
 
 .cta-button {

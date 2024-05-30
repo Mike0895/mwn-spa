@@ -17,14 +17,14 @@ export default defineComponent({
     name: 'LogoSlider',
     setup() {
         const logos = ref([
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png', alt: 'Logo 1' },
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png', alt: 'Logo 2' },
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png', alt: 'Logo 3' },
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png', alt: 'Logo 4' },
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png', alt: 'Logo 5' },
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Logo_doodle_art.png', alt: 'Logo 6' },
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png', alt: 'Logo 7' },
-            { src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png', alt: 'Logo 8' },
+            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logo 1' },
+            { src: require('@/assets/images/ists_logo_negro.png'), alt: 'Logo 2' },
+            { src: require('@/assets/images/iar_logo_negro.png'), alt: 'Logo 3' },
+            { src: require('@/assets/images/utpl_logo_negro.jpeg'), alt: 'Logo 4' },
+            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logo 5' },
+            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logo 6' },
+            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logo 7' },
+            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logo 8' },
         ]);
 
         const duplicatedLogos = ref([...logos.value, ...logos.value, ...logos.value]);        

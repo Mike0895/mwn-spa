@@ -9,18 +9,18 @@
         </v-card-text>
 
         <v-card-actions>
-            <v-btn class="btn-color-togglecard" text="Learn More" variant="text" @click="reveal = !reveal"></v-btn>
+            <v-btn class="btn-color-togglecard" text="Leer más" variant="text" @click="reveal = !reveal"></v-btn>
         </v-card-actions>
 
         <v-expand-transition>
             <v-card v-if="reveal" class="position-absolute w-100 toggle-content" height="100%" style="bottom: 0;">
                 <v-card-text class="pb-0">
-                    <p class="text-h4">Origin</p>
+                    <p class="text-h4"></p>
                     <p class="text-medium-emphasis">{{ detailedInfo }}</p>
                 </v-card-text>
 
                 <v-card-actions class="pt-0">
-                    <v-btn class="btn-color-togglecard" text="Close" variant="text" @click="reveal = false"></v-btn>
+                    <v-btn class="btn-color-togglecard" text="Cerrar" variant="text" @click="reveal = false"></v-btn>
                 </v-card-actions>
             </v-card>
         </v-expand-transition>

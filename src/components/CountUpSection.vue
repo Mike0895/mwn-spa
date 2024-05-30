@@ -24,19 +24,19 @@ export default defineComponent({
     return {
       counters: [
         {
-          value: 500,
+          value: 50000,
           description:
-            "sitios web creados para negocios de diversos tamaños y sectores",
+            "leads creados en campañas de Marketing Digital",
         },
         {
-          value: 200,
+          value: 10000,
           description:
-            "clientes satisfechos con nuestros servicios de desarrollo web",
+            "conversiones a través de nuestras web",
         },
         {
-          value: 90,
+          value: 5,
           description:
-            "de aumento en el tráfico web y las conversiones para nuestros clientes",
+            "años de experiencia en el sector digitals ",
         },
       ],
     };

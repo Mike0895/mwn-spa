@@ -34,29 +34,29 @@ export default defineComponent({
         const model = ref<number | null>(null);
         const images = ref([
             {
-                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
-                title: 'Image 1',
-                description: 'Description for Image 1',
+                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                title: 'ISTS',
+                description: 'Rediseño web y posicionamiento web SEO',
             },
             {
-                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
-                title: 'Image 2',
-                description: 'Description for Image 2',
+                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                title: 'AEIA',
+                description: 'Creación de Página Web',
             },
             {
-                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
-                title: 'Image 3',
-                description: 'Description for Image 3',
+                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                title: 'IAR',
+                description: 'SEO, Marketing Digital y Rediseño Web',
             },
             {
-                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
-                title: 'Image 4',
-                description: 'Description for Image 4',
+                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                title: 'FNAC',
+                description: 'Marketing Digital y Diseño Gráfico',
             },
             {
-                src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png',
-                title: 'Image 5',
-                description: 'Description for Image 5',
+                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                title: 'UTPL',
+                description: 'SEO, Marketing Digital y Diseño Gráfico',
             },
         ]);
 
@@ -77,6 +77,12 @@ export default defineComponent({
 .unselected-card {
     transition: all 0.3s ease-in-out;
     opacity: 0.5;
+}
+
+h3{
+    color: var(--primary-color-light);   
+    font-size: 1.8rem !important; 
+    font-weight: bold;
 }
 
 .description {
