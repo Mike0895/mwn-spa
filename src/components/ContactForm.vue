@@ -17,7 +17,7 @@
                             required></v-text-field>
                         <v-text-field v-model="phone" label="Teléfono" :rules="[v => !!v || 'Teléfono es obligatorio']"
                             required></v-text-field>
-                        <v-select v-model="plan" :items="plans" label="Selecciona un Plan" item-text="name"
+                        <v-select v-model="plan" :items="plans" label="Selecciona un Servicio" item-text="name"
                             item-value="id"></v-select>
                         <v-textarea v-model="message" label="Mensaje"></v-textarea>
                         <v-checkbox v-model="privacy" :rules="[v => !!v || 'Debes aceptar las políticas de privacidad']"
@@ -56,12 +56,12 @@ export default defineComponent({
         const snackbar = ref(false);
 
         const plans = ref([
-            { id: 1, name: 'Plan 1' },
-            { id: 2, name: 'Plan 2' },
-            { id: 3, name: 'Plan 3' },
-            { id: 4, name: 'Plan 4' },
-            { id: 5, name: 'Plan 5' },
-            { id: 6, name: 'Plan 6' }
+            { id: 1, name: 'Estrategias de Marketing Digital' },
+            { id: 2, name: 'Desarrollo Web a Medida y Moderno' },
+            { id: 3, name: 'Diseño Gráfico Creativo e Impactante' },
+            { id: 4, name: 'Gestión de Redes Sociales y Campañas' },
+            { id: 5, name: 'Consultoría y Auditoría SEO' },
+            { id: 6, name: 'Marketing de Contenidos' }
         ]);
 
         const submitForm = () => {

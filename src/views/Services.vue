@@ -15,7 +15,6 @@
                         :description="card.description" :detailedInfo="card.detailedInfo" />
                 </v-col>
             </v-row>
-
             <!-- Sección 2  -->
             <v-container class="business-results-container" fluid>
                 <v-row align="center" justify="space-between" class="py-5">

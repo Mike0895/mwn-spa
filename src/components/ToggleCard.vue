@@ -70,7 +70,7 @@ export default defineComponent({
 }
 
 .toggle-card:hover {
-    transform: translateY(-5px);
+    border: 4px solid var(--primary-color);
 }
 
 .toggle-content {
@@ -85,6 +85,10 @@ export default defineComponent({
 }
 .btn-color-togglecard{
     color: var(--primary-color);
+}
+
+description {
+    color: white !important;
 }
 
 </style>

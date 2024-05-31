@@ -1,11 +1,8 @@
 <template>
     <v-container class="home-container" id="contact" fluid>
         <ContactForm />
-        <v-divider class="my-5"></v-divider>
         <Accordion />
-        <v-divider class="my-5"></v-divider>
         <NewsletterSignup />
-
     </v-container>
 </template>
 
