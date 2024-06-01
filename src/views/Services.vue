@@ -76,42 +76,42 @@ export default defineComponent({
         return {
             cards: [
                 {
-                    icon: 'mdi-star',
+                    icon: 'mdi-chart-line',
                     title: 'Estrategias de Marketing Digital',
                     subtitle: 'Potencia tu presencia en línea.',
                     description: '',
                     detailedInfo: 'Aumentamos la visibilidad de tu negocio en Navarra, utilizando el SEO, SEM, y las RR.SS para atraer y convertir más clientes potenciales, asegurando un crecimiento medible.'
                 },
                 {
-                    icon: 'mdi-heart',
+                    icon: 'mdi-laptop',
                     title: 'Desarrollo Web a Medida y Moderno',
                     subtitle: 'Soluciones web personalizadas.',
                     description: '',
                     detailedInfo: 'Creamos web únicas y optimizadas para la conversión. Nuestros desarrolladores utilizan las últimas tecnologías para garantizar una excelente experiencia de usuario.'
                 },
                 {
-                    icon: 'mdi-home',
+                    icon: 'mdi-palette-outline',
                     title: 'Diseño Gráfico Creativo e Impactante',
                     subtitle: 'Imágenes que impactan.',
                     description: '',
                     detailedInfo: 'Nuestro equipo crea identidades visuales que capturan la esencia de tu marca. Desde logotipos hasta materiales promocionales para fortalecer tu presencia.'
                 },
                 {
-                    icon: 'mdi-star',
+                    icon: 'mdi-cellphone-message',
                     title: 'Gestión de Redes Sociales y Campañas',
                     subtitle: 'Conecta con tu audiencia',
                     description: '',
                     detailedInfo: 'Administramos y optimizamos tus perfiles en RR.SS y creamos contenido relevante y atractivo que fomenta la interacción y construye una comunidad leal en torno a tu marca.'
                 },
                 {
-                    icon: 'mdi-heart',
+                    icon: 'mdi-search-web',
                     title: 'Consultoría y Auditoría SEO',
                     subtitle: 'Mejora tu posicionamiento',
                     description: '',
                     detailedInfo: 'Identificamos y corregimos problemas, y te asesoramos sobre las mejores prácticas para mantener un SEO eficaz para los motores de búsqueda.'
                 },
                 {
-                    icon: 'mdi-home',
+                    icon: 'mdi-camera-front-variant',
                     title: 'Marketing de Contenidos para Pymes',
                     subtitle: 'Contenido que convierte',
                     description: '',

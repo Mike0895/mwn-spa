@@ -1,10 +1,11 @@
 <template>
-    <v-app-bar class="toolbar" app :color="headerColor" dark>
+    <v-app-bar class="toolbar" app :color="headerColor" dark v-show="!isHidden">
         <v-container class="container-limit">
             <v-row align="center" justify="space-between" class="header-content">
                 <!-- Logotipo -->
                 <v-col>
-                    <a href="home"> <v-img src="@/assets/images/mwn-logo-completo-blanco.png" alt="MWN Logo" class="logo"></v-img>
+                    <a href="#home"> <v-img src="@/assets/images/mwn-logo-completo-blanco.png" alt="MWN Logo"
+                            class="logo"></v-img>
                     </a>
                 </v-col>
 
@@ -68,7 +69,9 @@ export default defineComponent({
             ],
             drawer: false,
             headerColor: getComputedStyle(document.documentElement).getPropertyValue('--bg-dark').trim(),
-            activeLink: ''
+            activeLink: '',
+            previousScroll: 0,
+            isHidden: false
         };
     },
     mounted() {
@@ -105,6 +108,16 @@ export default defineComponent({
             });
         },
         onScroll() {
+            const currentScroll = window.scrollY;
+            if (currentScroll > this.previousScroll) {
+                // Scroll hacia abajo
+                this.isHidden = true;
+            } else {
+                // Scroll hacia arriba
+                this.isHidden = false;
+            }
+            this.previousScroll = currentScroll;
+
             const scrollPosition = window.scrollY + 100; // Añade un pequeño offset
             this.links.forEach(link => {
                 const section = document.querySelector(link.href);

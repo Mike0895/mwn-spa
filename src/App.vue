@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <Header />
-    <v-main>
+    
       <Home />
       <Our />
       <Services />
       <Stories />
       <Contact />
-    </v-main>
+    
     <Footer />
   </v-app>
 </template>
@@ -26,7 +26,7 @@ export default defineComponent({
   name: 'App',
   components: {
     Header,
-    Footer, Home, Our, Services, Stories, Contact
+    Home, Services, Our, Stories, Contact ,Footer
   }
 });
 </script>
