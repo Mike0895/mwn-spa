@@ -34,27 +34,27 @@ export default defineComponent({
         const model = ref<number | null>(null);
         const images = ref([
             {
-                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                src: require('@/assets/images/img-header/web-ists-mwn.png'),
                 title: 'ISTS',
                 description: 'Rediseño web y posicionamiento web SEO',
             },
             {
-                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                src: require('@/assets/images/img-header/web-aeia-mwn.png'),
                 title: 'AEIA',
                 description: 'Creación de Página Web',
             },
             {
-                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                src: require('@/assets/images/img-header/web-iar-mwn.png'),
                 title: 'IAR',
                 description: 'SEO, Marketing Digital y Rediseño Web',
             },
             {
-                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                src: require('@/assets/images/img-header/web-fnac-mwn.png'),
                 title: 'FNAC',
                 description: 'Marketing Digital y Diseño Gráfico',
             },
             {
-                src: require('@/assets/images/Citro-Mockup-4.png.webp'),
+                src: require('@/assets/images/img-header/web-utpl-mwn.png'),
                 title: 'UTPL',
                 description: 'SEO, Marketing Digital y Diseño Gráfico',
             },
@@ -71,6 +71,7 @@ export default defineComponent({
 <style scoped>
 .selected-card {
     transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
     opacity: 1;
 }
 

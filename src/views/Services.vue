@@ -49,7 +49,7 @@
                     <!-- Imagen con Figura Azul -->
                     <v-col cols="12" md="6" class="image-section">
                         <div class="blue-shape">
-                            <v-img src="@/assets/images/Citro-Mockup-8-768x768.png.webp" alt="Business Image"
+                            <v-img src="@/assets/images/img-header/aplicaciones-mwn-2.png" alt="Business Image"
                                 class="silueta-imagen"></v-img>
                         </div>
                     </v-col>
@@ -180,17 +180,20 @@ h2 {
 
 .image-section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    
 }
 
 .blue-shape {
     background-color: var(--primary-color);
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height:  600px;
+    max-height: 700px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    justify-content: flex-end;
 }
 .btn-container {
     display: flex;
@@ -205,6 +208,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    transform: scale(1.5);
+
 }
 </style>

@@ -27,7 +27,7 @@
             <!-- Monitor y Lista -->
             <v-row class="my-5" align="center" justify="center">
                 <v-col cols="12" md="6" class="text-center">
-                    <v-img src="@/assets/images/Citro-Mockup-3.png.webp" alt="Monitor"></v-img>
+                    <v-img src="@/assets/images/img-header/turismo-mwn.webp" alt="Monitor"></v-img>
                 </v-col>
                 <v-col cols="12" md="6">
                     <p class="p">
@@ -71,7 +71,7 @@
                     </p>
                 </v-col>
                 <v-col cols="12" md="6" class="text-center">
-                    <v-img src="@/assets/images/ejemplo-1.png" alt="Ejemplo"></v-img>
+                    <v-img src="@/assets/images/img-header/portada-mwn.png" alt="Ejemplo"></v-img>
                 </v-col>
             </v-row>
         </v-container>

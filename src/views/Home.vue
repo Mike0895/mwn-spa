@@ -20,7 +20,7 @@
 
                 <!-- Imagen -->
                 <v-col cols="12" md="6" class="image-section">
-                    <v-img src="@/assets/images/Citro-Mockup-8-768x768.png.webp" alt="Laptop and Phone"></v-img>
+                    <v-img src="@/assets/images/img-header/portada-mwn-2.webp" alt="Laptop and Phone"></v-img>
                 </v-col>
             </v-row>
         </v-container>
