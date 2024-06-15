@@ -1,5 +1,5 @@
 <template>
-  <v-btn class="btn-with-border" @click="handleClick">
+  <v-btn class="btn-with-border" href="#contact" @click="handleClick">
     <slot></slot>
   </v-btn>
 </template>
@@ -25,6 +25,7 @@ export default defineComponent({
 
 <style scoped>
 .btn-with-border {
+  max-width: 50%;
   font-weight: bold;
   display: flex;
   flex-direction: row;

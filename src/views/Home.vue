@@ -5,11 +5,15 @@
                 <!-- Texto y Botón -->
                 <v-col cols="12" md="6" class="text-section">
                     <h1>
-                        Convertimos visitantes en <span class="highlight">clientes potenciales</span> para tu negocio digital en Navarra.
+
+                        Impulsamos a las PYMES a través del <span class="highlight">Marketing</span>
+                        Digital y
+                        Desarrollo <span class="highlight">Web</span> innovador en <span
+                            class="highlight">Navarra</span>
                     </h1>
                     <p>
-                        Impulsamos a las PYMES a través de estrategias de Marketing Digital y
-                        Desarrollo Web innovador.
+                        Convertimos visitantes en clientes potencialespara tu negocio
+                        digital.
                     </p>
 
                     <Btn-with-border class="btn-container" @click="handleButtonClick">SOLICITA UNA AUDITORÍA

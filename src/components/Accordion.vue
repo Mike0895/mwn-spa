@@ -1,12 +1,15 @@
 <template>
-    <v-container class="container-limit" >
+    <v-container class="container-limit">
+        <!-- Title Row -->
         <v-row class="my-5">
             <v-col cols="12" class="text-center">
                 <h3>Preguntas Frecuentas de Nuestros Clientes</h3>
             </v-col>
         </v-row>
 
+        <!-- Accordion Panels -->
         <v-row>
+            <!-- Left Column Panels -->
             <v-col cols="12" md="6">
                 <v-expansion-panels class="my-4" variant="inset">
                     <v-expansion-panel v-for="(item, index) in leftItems" :key="index">
@@ -15,6 +18,7 @@
                     </v-expansion-panel>
                 </v-expansion-panels>
             </v-col>
+            <!-- Right Column Panels -->
             <v-col cols="12" md="6">
                 <v-expansion-panels class="my-4" variant="inset">
                     <v-expansion-panel v-for="(item, index) in rightItems" :key="index">
@@ -26,13 +30,13 @@
         </v-row>
     </v-container>
 </template>
-
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
     name: 'Accordion',
     setup() {
+        // Frequently Asked Questions
         const items = ref([
             { title: '¿Cómo el marketing digital beneficia a mi negocio en Navarra?', text: 'El marketing digital puede aumentar significativamente la visibilidad de tu negocio en Navarra, atraer más clientes potenciales, mejorar el reconocimiento de tu marca y aumentar las ventas mediante estrategias de SEO, SEM y marketing en redes sociales.' },
             { title: '¿Qué incluye el desarrollo web a medida?', text: 'Nuestro desarrollo web a medida incluye el diseño y la creación de sitios web personalizados, optimización para dispositivos móviles, integración de sistemas de gestión de contenidos (CMS), e-commerce, y optimización para motores de búsqueda (SEO).' },
@@ -42,6 +46,7 @@ export default defineComponent({
             { title: '¿Qué tipo de contenido se incluye en el marketing de contenidos?', text: 'El marketing de contenidos incluye la creación y distribución de contenido valioso y relevante como blogs, artículos, infografías, videos y publicaciones en redes sociales, diseñado para atraer, educar y convertir a tu audiencia en clientes leales.' }
         ]);
 
+        // Divide items into two columns
         const leftItems = ref(items.value.slice(0, 3));
         const rightItems = ref(items.value.slice(3, 6));
 

@@ -1,5 +1,5 @@
 <template>
-    <container class="container-limit">
+    <v-container class="container-limit">
         <v-sheet class="mx-auto" max-width="1200" max-height="800">
             <v-slide-group v-model="model" class="pa-4" show-arrows center-active :mandatory="true">
                 <v-slide-group-item v-for="(image, index) in images" :key="index" v-slot="{ isSelected, toggle }">
@@ -22,9 +22,8 @@
                 </v-slide-group-item>
             </v-slide-group>
         </v-sheet>
-    </container>
+    </v-container>
 </template>
-
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 
@@ -35,26 +34,31 @@ export default defineComponent({
         const images = ref([
             {
                 src: require('@/assets/images/img-header/web-ists-mwn.png'),
+                alt: 'Rediseño web y posicionamiento web SEO ISTS',
                 title: 'ISTS',
                 description: 'Rediseño web y posicionamiento web SEO',
             },
             {
                 src: require('@/assets/images/img-header/web-aeia-mwn.png'),
+                alt: 'Creación de Página Web AEIA',
                 title: 'AEIA',
                 description: 'Creación de Página Web',
             },
             {
                 src: require('@/assets/images/img-header/web-iar-mwn.png'),
+                alt: 'SEO, Marketing Digital y Rediseño Web IAR',
                 title: 'IAR',
                 description: 'SEO, Marketing Digital y Rediseño Web',
             },
             {
                 src: require('@/assets/images/img-header/web-fnac-mwn.png'),
+                alt: 'Marketing Digital y Diseño Gráfico FNAC',
                 title: 'FNAC',
                 description: 'Marketing Digital y Diseño Gráfico',
             },
             {
                 src: require('@/assets/images/img-header/web-utpl-mwn.png'),
+                alt: 'SEO, Marketing Digital y Diseño Gráfico UTPL',
                 title: 'UTPL',
                 description: 'SEO, Marketing Digital y Diseño Gráfico',
             },
@@ -67,7 +71,6 @@ export default defineComponent({
     },
 });
 </script>
-
 <style scoped>
 .selected-card {
     transition: all 0.3s ease-in-out;
@@ -80,9 +83,9 @@ export default defineComponent({
     opacity: 0.5;
 }
 
-h3{
-    color: var(--primary-color-light);   
-    font-size: 1.8rem !important; 
+h3 {
+    color: var(--primary-color-light);
+    font-size: 1.8rem !important;
     font-weight: bold;
 }
 

@@ -32,5 +32,4 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* Puedes añadir estilos específicos para el App.vue aquí si es necesario */
 </style>

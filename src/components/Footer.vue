@@ -1,9 +1,12 @@
+### Template
+
+```html
 <template>
     <v-footer>
         <v-container class="footer-container" fluid>
             <v-container class="container-limit">
                 <v-row>
-                    <!-- Columna 1 -->
+                    <!-- Column 1 -->
                     <v-col cols="12" md="3" class="footer-col">
                         <v-img src="@/assets/images/mwn-logo-completo-blanco.png" alt="Logo"
                             class="footer-logo"></v-img>
@@ -20,14 +23,11 @@
                             <v-col>
                                 <v-icon>mdi-whatsapp</v-icon>
                             </v-col>
-                            <v-col>
-                                <v-icon></v-icon>
-                            </v-col>
                         </v-row>
                         <p><v-icon class="icon-whatsapp" left>mdi-whatsapp</v-icon>+34 666 66 66 66</p>
                         <p><v-icon class="icon-whatsapp" left>mdi-email</v-icon>contacto@mwn.com</p>
                     </v-col>
-                    <!-- Columna 2 -->
+                    <!-- Column 2 -->
                     <v-col cols="12" md="3" class="footer-col">
                         <h3>Navegación</h3>
                         <ul>
@@ -36,10 +36,9 @@
                             <li><a href="#services">Servicios</a></li>
                             <li><a href="#stories">Historias de Éxito</a></li>
                             <li><a href="#contact">Contacto</a></li>
-
                         </ul>
                     </v-col>
-                    <!-- Columna 3 -->
+                    <!-- Column 3 -->
                     <v-col cols="12" md="3" class="footer-col">
                         <h3>¿Dónde estamos?</h3>
                         <p><v-icon left>mdi-map-marker</v-icon>Navarra</p>
@@ -50,7 +49,7 @@
                             <li>Política de Cookies</li>
                         </ul>
                     </v-col>
-                    <!-- Columna 4 -->
+                    <!-- Column 4 -->
                     <v-col cols="12" md="3" class="footer-col">
                         <h3>Servicios</h3>
                         <ul>
@@ -75,19 +74,18 @@
         </v-container>
     </v-footer>
 </template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'Footer',
 });
 </script>
-
 <style scoped>
-.v-footer{
+.v-footer {
     margin: 0;
     padding: 0;
 }
+
 .footer-container {
     background-color: var(--bg-dark);
     color: var(--bg-light);
@@ -108,7 +106,7 @@ export default defineComponent({
     margin-bottom: 20px;
     justify-content: flex-start;
     display: flex;
-    flex-grow:0 !important;
+    flex-grow: 0 !important;
 }
 
 .social-icons .v-icon {
@@ -140,15 +138,19 @@ export default defineComponent({
 .footer-col ul li:hover {
     color: var(--primary-color);
 }
+a:hover {
+        color: var(--primary-color);
+}
+
 
 .v-icon {
     vertical-align: middle;
 }
+
 .footer-bottom {
     padding-top: 20px;
     font-size: 14px;
     color: var(--bg-light);
-    
 }
 
 .footer-bottom .text-right {
@@ -159,11 +161,13 @@ export default defineComponent({
     background-color: var(--bg-light);
     margin: 20px 0;
 }
+
 a {
     text-decoration: none;
     color: var(--bg-light);
 }
-.icon-whatsapp{
+
+.icon-whatsapp {
     margin-right: 10px;
 }
 </style>

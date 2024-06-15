@@ -14,7 +14,7 @@
             <ImageSlider />
             <v-row>
                 <v-col cols="12" class="text-center my-5">
-                    <h2>Hemos ayudado a transformar negocios con nuestros diseños web únicos</h2>
+                    <h2>Hemos ayudado a transformar negocios en Navarra con nuestros estrategias de marketing digital</h2>
                 </v-col>
             </v-row>
             <v-container>
@@ -49,6 +49,9 @@ export default defineComponent({
     text-align: center;
 }
 
+h2{
+    color:var(--primary-color);
+}
 .my-5 {
     margin-top: 40px;
     margin-bottom: 40px;

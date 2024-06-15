@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import CountUpCard from "@/components/CountUpCard.vue"; // Asegúrate de que la ruta sea correcta
+import CountUpCard from "@/components/CountUpCard.vue";
 
 export default defineComponent({
   name: "CountUpSection",

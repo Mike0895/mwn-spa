@@ -58,10 +58,12 @@
             <v-row class="my-5">
                 <v-col cols="12" md="6">
                     <h4>
-                        Convertimos tu web en una máquina de conversiones para hacer crecer tu negocio.
+                        Convertimos tu web en una máquina de conversiones para hacer crecer tu negocio gracias al
+                        Marketing Digital.
                     </h4>
                     <p class="p">
-                        <br>En MWN, nos especializamos en marketing digital y desarrollo web en Navarra, transformando tu
+                        <br>En MWN, nos especializamos en marketing digital y desarrollo web en Navarra, transformando
+                        tu
                         sitio web en una poderosa herramienta de conversión. Nuestro equipo altamente capacitado trabaja
                         contigo para proporcionar soluciones adaptadas específicamente a tu negocio, garantizando que
                         siempre estés un paso adelante de la competencia. Utilizamos las últimas tecnologías y

@@ -1,6 +1,6 @@
 <template>
     <v-col cols="12" md="4" class="text-center count-up-card">
-        <div class="countup-number">+ {{ displayValue }}</div>
+        <div class="countup-number"><span>+</span>{{ displayValue }}</div>
         <p>{{ description }}</p>
     </v-col>
 </template>
@@ -23,7 +23,7 @@ export default defineComponent({
     setup(props) {
         const displayValue = ref(0);
         const duration = 2500;
-        const frameDuration = 1000 / 60; // 60 frames per second
+        const frameDuration = 1000 / 60;
 
         onMounted(() => {
             const totalFrames = Math.round(duration / frameDuration);
@@ -52,10 +52,13 @@ export default defineComponent({
 .countup-number {
     font-size: 3rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--bg-dark);
 }
 
 p {
     font-size: 1rem;
+}
+span{
+    color: var(--primary-color);
 }
 </style>

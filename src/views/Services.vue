@@ -22,10 +22,10 @@
                     <v-col cols="12" md="6" class="text-section">
                         <h2>Tu negocio podría estar dando mejores resultados</h2>
                         <p>
-                            <br>Estudiaremos tu negocio y te plantearemos una estrategia 100% personalizada para
-                            desarrollar
-                            un
-                            sitio web efectivo y atractivo que haga crecer tu negocio.
+                            <br>Estudiaremos tu negocio y te plantearemos una estrategia <strong>100%
+                                personalizada </strong> para
+                            desarrollar un sitio web efectivo y atractivo que haga crecer tu negocio.
+
                         </p>
                         <ul class="benefits-list"><br>
                             <li>
@@ -190,7 +190,7 @@ h2 {
     width: 90%;
     height:  600px;
     max-height: 700px;
-    border-radius: 20px;
+    border-radius: 50px 20px;
     position: relative;
     overflow: hidden;
     justify-content: flex-end;

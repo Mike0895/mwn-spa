@@ -3,56 +3,41 @@
     <v-container class="container-limit">
       <v-container class="contact-form-container">
         <v-card class="pa-4">
+          <!-- Card Title -->
           <v-card-title>
             <h2>¿Hablamos?</h2>
           </v-card-title>
+          <!-- Card Subtitle -->
           <v-card-subtitle>
             Déjanos tus datos y te informaremos de nuestras tarifas.
           </v-card-subtitle>
+          <!-- Form -->
           <v-form v-model="valid" ref="form">
-            <v-text-field 
-              v-model="name" 
-              label="Nombre y Apellidos"
-              :rules="[v => !!v || 'Nombre es obligatorio']" 
-              required
-            ></v-text-field>
-            <v-text-field 
-              v-model="email" 
-              label="Email"
+            <!-- Name Input -->
+            <v-text-field v-model="name" label="Nombre y Apellidos" :rules="[v => !!v || 'Nombre es obligatorio']"
+              required></v-text-field>
+            <!-- Email Input -->
+            <v-text-field v-model="email" label="Email"
               :rules="[v => !!v || 'Email es obligatorio', v => /.+@.+\..+/.test(v) || 'Email debe ser válido']"
-              required
-            ></v-text-field>
-            <v-text-field 
-              v-model="phone" 
-              label="Teléfono" 
-              :rules="[v => !!v || 'Teléfono es obligatorio']"
-              required
-            ></v-text-field>
-            <v-select 
-              v-model="plan" 
-              :items="plans" 
-              label="Selecciona un Servicio" 
-              item-text="name" 
-              item-value="id"
-            ></v-select>
-            <v-textarea 
-              v-model="message" 
-              label="Mensaje"
-            ></v-textarea>
-            <v-checkbox 
-              v-model="privacy" 
-              :rules="[v => !!v || 'Debes aceptar las políticas de privacidad']"
-              label="He leído y acepto la política de privacidad" 
-              required
-            ></v-checkbox>
-            <BtnWithBorder 
-              class="btn-container" 
-              @click="submitForm"
-            >
+              required></v-text-field>
+            <!-- Phone Input -->
+            <v-text-field v-model="phone" label="Teléfono" :rules="[v => !!v || 'Teléfono es obligatorio']"
+              required></v-text-field>
+            <!-- Service Selection -->
+            <v-select v-model="plan" :items="plans" label="Selecciona un Servicio" item-text="name"
+              item-value="id"></v-select>
+            <!-- Message Input -->
+            <v-textarea v-model="message" label="Mensaje"></v-textarea>
+            <!-- Privacy Checkbox -->
+            <v-checkbox v-model="privacy" :rules="[v => !!v || 'Debes aceptar las políticas de privacidad']"
+              label="He leído y acepto la política de privacidad" required></v-checkbox>
+            <!-- Submit Button -->
+            <BtnWithBorder class="btn-container" @click="submitForm">
               SOLICITA UNA AUDITORÍA GRATUITA
             </BtnWithBorder>
           </v-form>
         </v-card>
+        <!-- Snackbar Notification -->
         <v-snackbar v-model="snackbar" color="success">
           Próximamente una persona se pondrá en contacto contigo.
         </v-snackbar>
@@ -61,9 +46,10 @@
   </v-container>
 </template>
 
+
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import BtnWithBorder from '@/components/Btn-with-border.vue'; // Asegúrate de que la ruta sea correcta
+import BtnWithBorder from '@/components/Btn-with-border.vue'; // Ensure the path is correct
 
 export default defineComponent({
   name: 'ContactForm',
@@ -71,15 +57,19 @@ export default defineComponent({
     BtnWithBorder
   },
   setup() {
+    // Form validation
     const valid = ref(false);
+    // Form fields
     const name = ref('');
     const email = ref('');
     const phone = ref('');
     const plan = ref<number | null>(null);
     const message = ref('');
     const privacy = ref(false);
+    // Snackbar visibility
     const snackbar = ref(false);
 
+    // Available plans
     const plans = ref([
       { id: 1, name: 'Estrategias de Marketing Digital' },
       { id: 2, name: 'Desarrollo Web a Medida y Moderno' },
@@ -89,9 +79,10 @@ export default defineComponent({
       { id: 6, name: 'Marketing de Contenidos' }
     ]);
 
+    // Form submission
     const submitForm = () => {
       if (valid.value) {
-        // Almacenar los datos o enviarlos a un servidor aquí
+        // Handle form submission logic here (e.g., send data to a server)
         snackbar.value = true;
       }
     };
@@ -116,6 +107,7 @@ export default defineComponent({
 .bg-contact {
   background: var(--bg-dark);
 }
+
 .contact-form-container {
   color: white;
   border-radius: 8px;
@@ -157,3 +149,4 @@ export default defineComponent({
   margin-top: 20px;
 }
 </style>
+

@@ -2,14 +2,14 @@
     <v-app-bar class="toolbar" app :color="headerColor" dark v-show="!isHidden">
         <v-container class="container-limit">
             <v-row align="center" justify="space-between" class="header-content">
-                <!-- Logotipo -->
+                <!-- Logo -->
                 <v-col>
-                    <a href="#home"> <v-img src="@/assets/images/mwn-logo-completo-blanco.png" alt="MWN Logo"
-                            class="logo"></v-img>
+                    <a href="#home">
+                        <v-img src="@/assets/images/mwn-logo-completo-blanco.png" alt="MWN Logo" class="logo"></v-img>
                     </a>
                 </v-col>
 
-                <!-- Menú de Navegación para Escritorio -->
+                <!-- Desktop Navigation Menu -->
                 <v-col cols="auto" class="d-none d-md-flex">
                     <v-row align="center" no-gutters>
                         <v-col cols="auto" v-for="link in links" :key="link.text">
@@ -26,14 +26,14 @@
                     </v-row>
                 </v-col>
 
-                <!-- Menú Hamburguesa para Móviles -->
+                <!-- Mobile Hamburger Menu -->
                 <v-col cols="auto" class="d-md-none">
                     <v-app-bar-nav-icon @click="drawer = !drawer" />
                 </v-col>
             </v-row>
         </v-container>
 
-        <!-- Drawer para el Menú en Móviles -->
+        <!-- Drawer for Mobile Menu -->
         <v-navigation-drawer v-model="drawer" app temporary>
             <v-list>
                 <v-list-item v-for="link in links" :key="link.text">
@@ -110,15 +110,15 @@ export default defineComponent({
         onScroll() {
             const currentScroll = window.scrollY;
             if (currentScroll > this.previousScroll) {
-                // Scroll hacia abajo
+                // Scrolling down
                 this.isHidden = true;
             } else {
-                // Scroll hacia arriba
+                // Scrolling up
                 this.isHidden = false;
             }
             this.previousScroll = currentScroll;
 
-            const scrollPosition = window.scrollY + 100; // Añade un pequeño offset
+            const scrollPosition = window.scrollY + 100; // Add a small offset
             this.links.forEach(link => {
                 const section = document.querySelector(link.href);
                 if (section) {
