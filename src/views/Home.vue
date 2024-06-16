@@ -16,8 +16,7 @@
                         digital.
                     </p>
 
-                    <Btn-with-border class="btn-container" @click="handleButtonClick">SOLICITA UNA AUDITORÍA
-                        GRATUITA
+                    <Btn-with-border class="btn-container" @click="handleButtonClick">
                     </Btn-with-border>
 
                 </v-col>
@@ -56,6 +55,13 @@
     margin: 40px auto;
     padding: 0 20px;
 }
+
+@media screen and (max-width: 1200px) {
+    .home-container {
+            margin-top: 50px;
+    }
+}
+
 </style>
 
 <script lang="ts">

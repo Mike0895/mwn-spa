@@ -1,6 +1,6 @@
 <template>
   <v-btn class="btn-with-border" href="#contact" @click="handleClick">
-    <slot></slot>
+    <slot>SOLICITA UNA AUDITORÍA GRATUITA</slot>
   </v-btn>
 </template>
 
@@ -42,5 +42,30 @@ export default defineComponent({
   color: var(--bg-light) ;
   background: var(--primary-color) ;
   transform: scale(1.03);
+}
+ /* Media query responsive */
+ 
+@media (max-width: 1260px) {
+  .btn-with-border {
+    max-width: 60%;
+    padding: 25px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-with-border {
+    max-width: 80%;
+    padding: 20px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-with-border {
+    max-width: 90%;
+    padding: 15px 20px !important;
+    font-size: 12px;
+  }
 }
 </style>

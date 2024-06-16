@@ -34,7 +34,8 @@
         </v-container>
 
         <!-- Drawer for Mobile Menu -->
-        <v-navigation-drawer v-model="drawer" app temporary>
+        <v-navigation-drawer v-model="drawer" app temporary
+            :class="{ 'custom-drawer': drawer }">
             <v-list>
                 <v-list-item v-for="link in links" :key="link.text">
                     <v-list-item-title>
@@ -132,7 +133,6 @@ export default defineComponent({
     }
 });
 </script>
-
 <style scoped>
 .header-content {
     flex-wrap: nowrap;
@@ -175,27 +175,20 @@ export default defineComponent({
     align-items: center;
 }
 
-@media (max-width: 600px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        max-width: 100px;
-        margin-bottom: 10px;
-    }
-
-    .call-to-action {
-        width: 100%;
-        text-align: center;
-    }
-}
-
 .v-btn.active,
 .v-btn:hover {
     font-weight: bold;
     font-size: 1.01em;
     transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.custom-drawer {
+            position: fixed !important;
+                top: 70px !important;
+                height: 270px !important;
+                width: 100% !important;
+                z-index: 1004;
+                left: 0 !important;
+                /* right: 0% !important; */
 }
 </style>
