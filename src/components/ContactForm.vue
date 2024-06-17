@@ -109,7 +109,7 @@ export default defineComponent({
 }
 
 .contact-form-container {
-  color: white;
+  color: var(--primary-color-light);
   border-radius: 8px;
   max-width: 800px;
 }
@@ -141,8 +141,8 @@ export default defineComponent({
 }
 
 .v-snackbar {
-  background-color: #0071E3;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--primary-color-light);
 }
 
 .btn-container {

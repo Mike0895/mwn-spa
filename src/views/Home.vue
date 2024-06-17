@@ -2,7 +2,7 @@
     <v-container class="home-container" id="home" fluid>
         <v-container class=" container-limit">
             <v-row align="center" justify="space-between">
-                <!-- Texto y Botón -->
+                <!-- Text and button -->
                 <v-col cols="12" md="6" class="text-section">
                     <h1>
 
@@ -41,10 +41,15 @@
 .text-section {
     text-align: left;
     margin-bottom: 20px;
+    animation: slideInFromLeft 1.5s ease-in-out;
 }
 
 .highlight {
     color: var(--primary-color);
+}
+
+.image-section{
+    animation: slideInFromRight 1.5s ease-in-out;
 }
 
 .image-section img {
@@ -56,11 +61,14 @@
     padding: 0 20px;
 }
 
+
+
 @media screen and (max-width: 1200px) {
     .home-container {
             margin-top: 50px;
     }
 }
+
 
 </style>
 

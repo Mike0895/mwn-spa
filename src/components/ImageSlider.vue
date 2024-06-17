@@ -30,7 +30,7 @@ import { defineComponent, ref } from 'vue';
 export default defineComponent({
     name: 'ImageSlider',
     setup() {
-        const model = ref<number | null>(null);
+        const model = ref<number | null>(1);
         const images = ref([
             {
                 src: require('@/assets/images/img-header/web-ists-mwn.png'),
@@ -106,4 +106,25 @@ h3 {
 .v-slide-group {
     overflow: hidden;
 }
-</style>
+
+@media (max-width: 960px) {
+    .v-card {
+        height: 300px !important;
+        width: 300px !important;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 460px) {
+    .v-card {
+        height: 300px !important;
+        width: 200px !important;
+    }
+}
+    </style>

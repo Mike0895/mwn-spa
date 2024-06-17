@@ -184,7 +184,7 @@ export default defineComponent({
 
 .custom-drawer {
             position: fixed !important;
-                top: 70px !important;
+                top: 80px !important;
                 height: 270px !important;
                 width: 100% !important;
                 z-index: 1004;

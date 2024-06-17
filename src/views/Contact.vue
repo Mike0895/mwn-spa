@@ -30,4 +30,9 @@ padding: 40px 0;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+.animation {
+        animation: slideInFromRight 1.5s ease-in-out;
+}
+
 </style>

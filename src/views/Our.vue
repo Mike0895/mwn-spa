@@ -90,8 +90,8 @@ export default defineComponent({
 
 <style scoped>
 .our-container {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--primary-color-light);
+    color: var(--bg-dark);
     padding: 40px 0;
 }
 .icon-color {
