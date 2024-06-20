@@ -17,17 +17,17 @@ export default defineComponent({
     name: 'LogoSlider',
     setup() {
         const logos = ref([
-            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logotipo aeia' },
+            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logotipo fnac' },
             { src: require('@/assets/images/ists_logo_negro.png'), alt: 'Logotipo utpl' },
             { src: require('@/assets/images/iar_logo_negro.png'), alt: 'Logotipo iar' },
-            { src: require('@/assets/images/utpl_logo_negro.jpeg'), alt: 'Logotipo gestaplus' },
-            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logotipo cómete navarra' },
-            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logotipo fnac' },
-            { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logotipo ists' },
+            { src: require('@/assets/images/utpl_logo_negro.jpeg'), alt: 'Logotipo utpl' },
+            { src: require('@/assets/images/gestaplus-logo.png'), alt: 'Logotipo gestaplus' },
+            { src: require('@/assets/images/Logo_UPNA.svg'), alt: 'Logotipo Upna' },
+            { src: require('@/assets/images/aria_logo_negro.png'), alt: 'Logotipo aria' },
             { src: require('@/assets/images/fnac_logo_negro.png'), alt: 'Logotipo upna' },
         ]);
 
-        const duplicatedLogos = ref([...logos.value, ...logos.value, ...logos.value]);        
+        const duplicatedLogos = ref([...logos.value, ...logos.value, ...logos.value, ...logos.value,]);        
         const visibleLogos = ref(duplicatedLogos);
         const containerStyle = ref({
             transform: 'translateX(0)',

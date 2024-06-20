@@ -37,19 +37,27 @@
             </BtnWithBorder>
           </v-form>
         </v-card>
-        <!-- Snackbar Notification -->
-        <v-snackbar v-model="snackbar" color="success">
-          Próximamente una persona se pondrá en contacto contigo.
-        </v-snackbar>
+        <!-- Dialog Notification -->
+        <v-dialog v-model="dialog" max-width="500" persistent>
+          <v-card>
+            <v-card-title class="headline">Mensaje Enviado</v-card-title>
+            <v-card-text>
+              Hemos recibido tu mensaje, muy pronto una persona se pondrá en contacto contigo.
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="primary" @click="dialog = false">Aceptar</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
       </v-container>
     </v-container>
   </v-container>
 </template>
 
-
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import BtnWithBorder from '@/components/Btn-with-border.vue'; // Ensure the path is correct
+import BtnWithBorder from '@/components/Btn-with-border.vue'; 
 
 export default defineComponent({
   name: 'ContactForm',
@@ -66,8 +74,8 @@ export default defineComponent({
     const plan = ref<number | null>(null);
     const message = ref('');
     const privacy = ref(false);
-    // Snackbar visibility
-    const snackbar = ref(false);
+    // Dialog visibility
+    const dialog = ref(false);
 
     // Available plans
     const plans = ref([
@@ -81,10 +89,8 @@ export default defineComponent({
 
     // Form submission
     const submitForm = () => {
-      if (valid.value) {
-        // Handle form submission logic here (e.g., send data to a server)
-        snackbar.value = true;
-      }
+      // Simulate form submission
+      dialog.value = true;
     };
 
     return {
@@ -96,7 +102,7 @@ export default defineComponent({
       message,
       privacy,
       plans,
-      snackbar,
+      dialog,
       submitForm
     };
   }
@@ -148,5 +154,9 @@ export default defineComponent({
 .btn-container {
   margin-top: 20px;
 }
-</style>
 
+/* Opacity background when dialog is active */
+.v-dialog__content--active {
+  background: rgba(0, 0, 0, 0.5);
+}
+</style>
